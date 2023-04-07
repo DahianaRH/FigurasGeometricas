@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        TrianguloEquilatero triangulo1 = new TrianguloEquilatero(9);
+        float area = triangulo1.calcularArea();
+        String dibujo = triangulo1.dibujar();
+        System.out.println(area);
+        System.out.println(dibujo);
     }
 }
