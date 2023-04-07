@@ -1,11 +1,13 @@
 public abstract class FiguraBidimensional extends FiguraGeometrica{
 
-    @Override
-    public float calcularPerimetro() {
-        return 0;
+    public FiguraBidimensional(int[] lados) throws ExcepcionMedidaMaxima {
+        super(lados);
     }
 
-    @Override
+    public float calcularPerimetro() {
+        return 0.0F;
+    }
+
     public String dibujar() {
         return null;
     }
