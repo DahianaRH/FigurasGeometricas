@@ -4,9 +4,11 @@ public class Cilindro extends FiguraTridimensional{
         super(new int[] {radio, altura});
     }
 
-    @Override
+   @Override
     public int calcularPerimetro() {
-        return super.calcularPerimetro();
+        float perimetroBase = 2 * (float) Math.PI * this.getLados(0);
+        float perimetroLateral = 2 * (float) Math.PI * this.getLados(1);
+        return (int)(perimetroBase + perimetroLateral);
     }
 
     @Override
