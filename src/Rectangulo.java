@@ -6,13 +6,13 @@ public class Rectangulo extends FiguraBidimensional{
 
     @Override
     public float calcularPerimetro() {
-        float perimetro = (float)(2*(lados[0]) + (2*lados[2]));
+        float perimetro = (float)(2*(getLados(0) + (2*getLados(2)));
         return perimetro;
     }
 
     @Override
     public float calcularArea() {
-        float area = (float)(lados[0] * lados[2]);
+        float area = (float)(getLados(0) * getLados(2));
         return area;
     }
 

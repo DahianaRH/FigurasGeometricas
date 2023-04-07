@@ -6,13 +6,13 @@ public class Cuadrado extends FiguraBidimensional{
 
     @Override
     public float calcularPerimetro() {
-        float perimetro = lados[0]*4;
+        float perimetro = getLados(0)*4;
         return perimetro;
     }
 
     @Override
     public float calcularArea() {
-        float area = (float)(lados[0] * lados[0]) ;
+        float area = (float)(getLados(0) * getLados(0)) ;
         return area;
     }
 
