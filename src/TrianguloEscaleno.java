@@ -1,22 +1,22 @@
 public class TrianguloEscaleno extends Triangulo {
 
-    public TrianguloEscaleno(int lado1, int lado2, int lado3) {
-        super(lado1, lado2, lado3);
+    public TrianguloEscaleno(int lado1, int lado2, int lado3) throws ExcepcionMedidaMaxima {
+        super(new int[] {lado1, lado2, lado3});
     }
     @Override
-    public float calcularPerimetro() {
-        float perimetro = lados[0] + lados[1] + lados[2];
+    public int calcularPerimetro() {
+        int perimetro = getLados(0) + getLados(1) + getLados(2);
         return perimetro;
     }
 
     public float calcularSemiperimetro() {
-        float semiperimetro = (float)((lados[0] + lados[1] + lados[2])/2);
+        float semiperimetro = (float)((getLados(0) + getLados(1) + getLados(2))/2);
         return semiperimetro;
     }
 
     @Override
     public float calcularArea(){
-        float area = (float) (Math.sqrt(calcularSemiperimetro()*(calcularSemiperimetro()-lados[0])*(calcularSemiperimetro()-lados[1])*(calcularSemiperimetro()-lados[2])));
+        float area = (float) (Math.sqrt(calcularSemiperimetro()*(calcularSemiperimetro()-getLados(0))*(calcularSemiperimetro()-getLados(1))*(calcularSemiperimetro()-getLados(2))));
         return area;
     }
 

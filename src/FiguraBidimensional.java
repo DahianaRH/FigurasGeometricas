@@ -4,13 +4,13 @@ public abstract class FiguraBidimensional extends FiguraGeometrica{
         super(lados);
     }
 
-    public float calcularPerimetro() {
-        return 0.0F;
+    public int calcularPerimetro() {
+        return 0;
     }
 
     public String dibujar() {
         return null;
     }
 
-    public abstract float calcularArea();
+    public float calcularArea(){return 0.0F; }
 }

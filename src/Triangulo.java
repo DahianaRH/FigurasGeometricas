@@ -4,7 +4,4 @@ public class Triangulo extends FiguraBidimensional{
         super(lados);
     }
 
-    public float calcularArea() {
-        return 0.0F;
-    }
 }

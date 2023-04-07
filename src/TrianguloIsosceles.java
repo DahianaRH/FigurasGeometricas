@@ -1,17 +1,17 @@
 public class TrianguloIsosceles extends Triangulo {
-    public TrianguloIsosceles(int lado1, int lado2) {
-        super(lado1, lado1, lado2);
+    public TrianguloIsosceles(int lado1, int lado2) throws ExcepcionMedidaMaxima {
+        super(new int[] {lado1, lado1, lado2});
     }
 
     @Override
-    public float calcularPerimetro() {
-        float perimetro = (float)((2 * this.lados[0]) + this.lados[2]);
+    public int calcularPerimetro() {
+        int perimetro = ((2 * this.getLados(0)) + this.getLados(2));
         return perimetro;
     }
 
     @Override
     public float calcularArea(){
-        float area = (float)((this.lados[2])*(Math.sqrt((this.lados[0]*this.lados[0] - (float)(this.lados[2]*this.lados[2]/4)))))/2 ;
+        float area = (float)((this.getLados(2))*(Math.sqrt((this.getLados(0)*this.getLados(0) - (float)(this.getLados(2)*this.getLados(2)/4)))))/2 ;
         return area;
     }
 

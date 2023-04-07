@@ -15,12 +15,18 @@ public abstract class FiguraGeometrica {
         this.lados = lados;
     }
 
-    public abstract float calcularPerimetro();
+    public abstract int calcularPerimetro();
     public abstract String dibujar();
 
+    public abstract float calcularArea();
 
-    public int[] getLados() {
-        return lados;
+
+    public int getLados(int i) {
+        if (i >= 0 && i < lados.length) {
+            return lados[i];
+        } else {
+            return 0;
+        }
     }
 
     public void setLados(int[] lados) throws ExcepcionMedidaMaxima {

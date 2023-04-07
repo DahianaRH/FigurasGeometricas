@@ -3,13 +3,14 @@ public abstract class FiguraTridimensional extends FiguraGeometrica{
         super(lados);
     }
 
-    public float calcularPerimetro() {
-        return 0.0F;
-    }
+    @Override
+    public int calcularPerimetro() { return 0; }
 
-    public String dibujar() {
-        return null;
-    }
+    @Override
+    public String dibujar() { return null; }
+
+    @Override
+    public float calcularArea() { return 0; }
 
     public abstract float calcularVolumen();
 }
