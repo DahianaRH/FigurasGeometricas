@@ -1,18 +1,12 @@
 public abstract class FiguraTridimensional extends FiguraGeometrica{
     public FiguraTridimensional(int[] lados) throws ExcepcionMedidaMaxima {
-        for (int lado : super.lados) {
-            if (lado >10){
-                throw new ExcepcionMedidaMaxima();
-            }
-        }
-        this.lados = lados;
-    }
-    @Override
-    public float calcularPerimetro() {
-        return 0;
+        super(lados);
     }
 
-    @Override
+    public float calcularPerimetro() {
+        return 0.0F;
+    }
+
     public String dibujar() {
         return null;
     }
