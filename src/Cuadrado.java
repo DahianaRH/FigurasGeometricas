@@ -5,8 +5,8 @@ public class Cuadrado extends FiguraBidimensional{
     }
 
     @Override
-    public float calcularPerimetro() {
-        float perimetro = getLados(0)*4;
+    public int calcularPerimetro() {
+        int perimetro = getLados(0)*4;
         return perimetro;
     }
 

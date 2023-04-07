@@ -5,8 +5,8 @@ public class Rectangulo extends FiguraBidimensional{
     }
 
     @Override
-    public float calcularPerimetro() {
-        float perimetro = (float)(2*(getLados(0) + (2*getLados(2)));
+    public int calcularPerimetro() {
+        int perimetro = 2*(getLados(0) + (2*getLados(2)));
         return perimetro;
     }
 
