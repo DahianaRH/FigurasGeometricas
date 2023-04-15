@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class Rectangulo extends FiguraBidimensional{
 
     public Rectangulo(int lado1, int lado2) throws ExcepcionMedidaMaxima{
@@ -13,7 +15,9 @@ public class Rectangulo extends FiguraBidimensional{
     @Override
     public float calcularArea() {
         float area = (float)(getLados(0) * getLados(2));
-        return area;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String areaFormateada = df.format(area).replace(",", ".");
+        return Float.valueOf(areaFormateada);
     }
 
     public String dibujar() {
