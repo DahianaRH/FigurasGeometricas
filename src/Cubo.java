@@ -1,4 +1,4 @@
-public class Cubo extends FiguraTridimensional{
+public class Cubo extends FiguraGeometrica implements FiguraTridimensional{
     public Cubo(int lado) throws ExcepcionMedidaMaxima {
         super(new int[] {lado, lado, lado, lado, lado, lado});
     }
@@ -23,6 +23,6 @@ public class Cubo extends FiguraTridimensional{
 
     @Override
     public String dibujar() {
-        return ("El cubo tiene un perimetro de "+ this.calcularPerimetro() + ", un área de " +this.calcularArea()+" y un volumen de "+this.calcularVolumen());
+        return ("El cubo tiene un área de " +this.calcularArea()+" y un volumen de "+this.calcularVolumen());
     }
 }
