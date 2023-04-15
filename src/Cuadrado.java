@@ -16,6 +16,7 @@ public class Cuadrado extends FiguraBidimensional{
         return area;
     }
 
+    @Override
     public String dibujar() {
         return ("El cuadrado tiene un perimetro de "+ this.calcularPerimetro() + " y un área de " +this.calcularArea());
     }
