@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class TrianguloEquilatero extends Triangulo{
 
     public TrianguloEquilatero(int lado1) throws ExcepcionMedidaMaxima {
@@ -13,7 +15,9 @@ public class TrianguloEquilatero extends Triangulo{
     @Override
     public float calcularArea(){
         float area = (float)((this.getLados(0))*(this.getLados(0))*Math.sqrt(3))/4;
-        return area;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String areaFormateada = df.format(area).replace(",", ".");
+        return Float.valueOf(areaFormateada);
     }
 
     @Override
