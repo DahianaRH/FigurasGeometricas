@@ -21,40 +21,30 @@ public class Main {
         int perimetroTrianguloIsosceles = triangulo1.calcularPerimetro();
         String dibujo1 = triangulo1.dibujar();
         System.out.println(dibujo1);
-//        System.out.println(areaTrianguloIsosceles);
-//        System.out.println(perimetroTrianguloIsosceles);
 
 
         TrianguloEquilatero triangulo2 = new TrianguloEquilatero(5);
         float areaTrianguloEquilatero = triangulo2.calcularArea();
         int perimetroTrianguloEquilatero = triangulo2.calcularPerimetro();
         String dibujo2 = triangulo2.dibujar();
-//        System.out.println(areaTrianguloEquilatero);
-//        System.out.println(perimetroTrianguloEquilatero);
         System.out.println(dibujo2);
 
         TrianguloEscaleno triangulo3 = new TrianguloEscaleno(5, 6, 7);
         float areaTrianguloEscaleno = triangulo3.calcularArea();
         int perimetroTrianguloEscaleno = triangulo3.calcularPerimetro();
         String dibujo3 = triangulo3.dibujar();
-//        System.out.println(areaTrianguloEscaleno);
-//        System.out.println(perimetroTrianguloEscaleno);
         System.out.println(dibujo3);
 
         Cuadrado cuadrado = new Cuadrado(6);
         float areaCuadrado = cuadrado.calcularArea();
         int perimetroCuadrado = cuadrado.calcularPerimetro();
         String dibujo4 = cuadrado.dibujar();
-//        System.out.println(areaCuadrado);
-//        System.out.println(perimetroCuadrado);
         System.out.println(dibujo4);
 
         Rectangulo rectangulo = new Rectangulo(9,5);
         float areaRectangulo = rectangulo.calcularArea();
         int perimetroRectangulo = rectangulo.calcularPerimetro();
         String dibujo5 = rectangulo.dibujar();
-//        System.out.println(areaRectangulo);
-//        System.out.println(perimetroRectangulo);
         System.out.println(dibujo5);
 
         System.out.println("\t\t\nFIGURAS TRIDIMENSIONALES\n");
@@ -64,9 +54,6 @@ public class Main {
         int perimetroCilindro = cilindro.calcularPerimetro();
         float volumenCilindro = cilindro.calcularVolumen();
         String dibujo6 = cilindro.dibujar();
-//        System.out.println(areaCilindro);
-//        System.out.println(perimetroCilindro);
-//        System.out.println(volumenCilindro);
         System.out.println(dibujo6);
 
         Cubo cubo = new Cubo(6);
@@ -74,9 +61,6 @@ public class Main {
         int perimetroCubo = cubo.calcularPerimetro();
         float volumenCubo = cubo.calcularVolumen();
         String dibujo7 = cubo.dibujar();
-//        System.out.println(areaCubo);
-//        System.out.println(perimetroCubo);
-//        System.out.println(volumenCubo);
         System.out.println(dibujo7);
 
     }
