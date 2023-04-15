@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class TrianguloEscaleno extends Triangulo {
 
     public TrianguloEscaleno(int lado1, int lado2, int lado3) throws ExcepcionMedidaMaxima {
@@ -17,7 +19,9 @@ public class TrianguloEscaleno extends Triangulo {
     @Override
     public float calcularArea(){
         float area = (float) (Math.sqrt(calcularSemiperimetro()*(calcularSemiperimetro()-getLados(0))*(calcularSemiperimetro()-getLados(1))*(calcularSemiperimetro()-getLados(2))));
-        return area;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String areaFormateada = df.format(area).replace(",", ".");
+        return Float.valueOf(areaFormateada);
     }
 
     @Override
