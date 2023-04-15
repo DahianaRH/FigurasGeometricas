@@ -11,6 +11,10 @@ Además, la implementación de la interfaz FiguraTridimensional para las clases 
 y Cilindro permite la definición de métodos específicos para figuras tridimensionales,
 que se usa en este caso para calcular el volumen de la figura.*/
 
+/*  INTEGRANTES:
+    SANDY RUIZ
+    ANGELICA CUERVO */
+
 public class Main {
     public static void main(String[] args) throws ExcepcionMedidaMaxima {
 
