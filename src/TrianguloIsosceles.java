@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class TrianguloIsosceles extends Triangulo {
     public TrianguloIsosceles(int lado1, int lado2) throws ExcepcionMedidaMaxima {
         super(new int[] {lado1, lado1, lado2});
@@ -10,9 +12,11 @@ public class TrianguloIsosceles extends Triangulo {
     }
 
     @Override
-    public float calcularArea(){
-        float area = (float)((this.getLados(2))*(Math.sqrt((this.getLados(0)*this.getLados(0) - (float)(this.getLados(2)*this.getLados(2)/4)))))/2 ;
-        return area;
+    public float calcularArea() {
+        float area = (float)((this.getLados(2))*(Math.sqrt((this.getLados(0)*this.getLados(0) - (float)(this.getLados(2)*this.getLados(2)/4)))))/2;
+        DecimalFormat df = new DecimalFormat("#.##");
+        String areaFormateada = df.format(area).replace(",", ".");
+        return Float.valueOf(areaFormateada);
     }
 
     @Override
